@@ -4,13 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    height: 100vh;
-}
-
 :root {
     --background: oklch(1 0 0);
     --foreground: oklch(0.13 0.028 261.692);
@@ -128,4 +121,16 @@ body {
   body {
     @apply bg-background text-foreground;
     }
+}
+
+html, body {
+    margin: 0;
+    place-items: center;
+    height: 100dvh;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
 }
