@@ -15,7 +15,7 @@ export default function HeaderContainer({section, searchQuery, setSearchQuery}: 
     if (section === 'taxis') {
         sectionTitle = 'Ruteros';
     } else if (section === 'buses') {
-        sectionTitle = 'Buses activos';
+        sectionTitle = 'Ómnibus';
     } else if (section === 'settings') {
         sectionTitle = 'Ajustes';
     }
