@@ -1,4 +1,6 @@
-export const routes: any[] = [
+import {Bus} from '@/types/index.ts'
+
+export const routes: Bus[] = [
     {
         "numero": "5600",
         "chapa": "B203708",

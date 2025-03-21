@@ -1,6 +1,6 @@
-import NavBottomBar from "@/components/NavBottomBar";
-import Main from "@/components/Main";
-import {ThemeProvider} from "@/components/theme-provider.tsx";
+import NavBottomBar from "@/components/layout/NavBottomBar.tsx";
+import Main from "@/components/layout/Main.tsx";
+import {ThemeProvider} from "@/utils/theme-provider.tsx";
 import {useState} from "react";
 
 function App() {
