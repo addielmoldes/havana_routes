@@ -29,7 +29,7 @@ export default function NavBottomBar({section, setSection}: {
                     onClick={() => handleClick('buses')}
                 >
                     <BusFront className="h-6 w-6"/>
-                    <span className="text-xs mt-0">Buses</span>
+                    <span className="text-xs mt-0">Ómnibus</span>
                 </Button>
 
                 <Button
