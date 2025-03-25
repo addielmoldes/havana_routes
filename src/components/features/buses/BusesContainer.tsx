@@ -1,10 +1,10 @@
-import RouteList from './RouteList.tsx'
+import RouteList from '../RouteList.tsx'
 import {Tabs, TabsTrigger, TabsContent, TabsList} from "@/components/ui/tabs.tsx";
 import {mainRoutes} from "@/utils/main-routes.ts";
 import {supplierRoutes} from "@/utils/supplier-routes.ts";
 import {secondatyRoutes} from "@/utils/secondary-routes.ts";
 
-export default function BusesContainer({searchQuery}: {searchQuery: string}) {
+export default function BusesContainer({searchQuery}: { searchQuery: string }) {
 
     return (
         <Tabs defaultValue="mainRoutes" className="h-[100%] overflow-hidden">
