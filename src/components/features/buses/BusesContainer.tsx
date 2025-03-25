@@ -2,7 +2,7 @@ import RouteList from '../RouteList.tsx'
 import {Tabs, TabsTrigger, TabsContent, TabsList} from "@/components/ui/tabs.tsx";
 import {mainRoutes} from "@/utils/main-routes.ts";
 import {supplierRoutes} from "@/utils/supplier-routes.ts";
-import {secondatyRoutes} from "@/utils/secondary-routes.ts";
+import {secondaryRoutes} from "@/utils/secondary-routes.ts";
 
 export default function BusesContainer({searchQuery}: { searchQuery: string }) {
 
@@ -25,7 +25,7 @@ export default function BusesContainer({searchQuery}: { searchQuery: string }) {
                 </TabsContent>
 
                 <TabsContent value="otherRoutes" className="px-3">
-                    <RouteList routes={secondatyRoutes} searchQuery={searchQuery}/>
+                    <RouteList routes={secondaryRoutes} searchQuery={searchQuery}/>
                 </TabsContent>
             </div>
         </Tabs>
