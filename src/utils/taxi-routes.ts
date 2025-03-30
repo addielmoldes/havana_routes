@@ -13,7 +13,7 @@ export const taxiRoutes: VehicleRoute[] = [
     },
     {
         code: '3',
-        route: '',
+        route: 'La Lisa, 266 y 27 - H. Vieja,  Égido y Bernaza',
         type: 'taxi',
     },
     {

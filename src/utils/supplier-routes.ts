@@ -9,7 +9,7 @@ export const supplierRoutes: VehicleRoute[] = [
     },
     {
         code: 'A2',
-        route: 'Lawton - Estación Central de Ferrocarriles',
+        route: 'Lawton - E. Central de Ferrocarriles',
         type: 'bus',
         busType: 'supplier'
     },
@@ -39,7 +39,7 @@ export const supplierRoutes: VehicleRoute[] = [
     },
     {
         code: 'A7',
-        route: 'Cotorro - Guanabacoa, Reparto Chibás (El Roble)',
+        route: 'Cotorro - Guanabacoa, Reparto Chibás',
         type: 'bus',
         busType: 'supplier'
     },
@@ -57,19 +57,19 @@ export const supplierRoutes: VehicleRoute[] = [
     },
     {
         code: 'A9',
-        route: 'Cotorro - Santiago de las Vegas',
+        route: 'Cotorro - Stgo. de las Vegas',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A10',
-        route: 'Cotorro - Hospital Pando Ferrer',
+        route: 'Cotorro - H. Pando Ferrer',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A11',
-        route: 'Lawton - Guanabacoa, Reparto Chibás (El Roble)',
+        route: 'Lawton - Guanabacoa, Reparto Chibás',
         type: 'bus',
         busType: 'supplier'
     },
@@ -87,31 +87,31 @@ export const supplierRoutes: VehicleRoute[] = [
     },
     {
         code: 'A14',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Palatino - Fontanar',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A15',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Stgo. de las Vegas - Murgas',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A16',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Palatino - Haiphong',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A17',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'La Rosita - Reparto Camilo Cienfuego',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A18',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Lawton - Managua',
         type: 'bus',
         busType: 'supplier'
     },
@@ -279,43 +279,43 @@ export const supplierRoutes: VehicleRoute[] = [
     },
     {
         code: 'A68',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Antonio Guiteras - Palatino',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A70',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'La Lisa - H. 10 de Octubre',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A81',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Palatino - Santa Cecilia',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A83',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Antonio Guiteras - Fortuna',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A87',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Fortuna - Ciudad Deportiva',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A95',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Guanabacoa - G y 25, Vedado',
         type: 'bus',
         busType: 'supplier'
     },
     {
         code: 'A97',
-        route: 'La Rosita - Virgen del Camino',
+        route: 'Playa - La Ceiba',
         type: 'bus',
         busType: 'supplier'
     },

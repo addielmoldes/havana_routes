@@ -21,13 +21,13 @@ export const mainRoutes: VehicleRoute[] = [
     },
     {
         code: 'P4',
-        route: 'San Agustín - Terminal Central de Ferrocarriles',
+        route: 'San Agustín - E. Central de Ferrocarriles',
         type: 'bus',
         busType: 'main'
     },
     {
         code: 'P5',
-        route: 'San Agustín - Terminal Central de Ferrocarriles',
+        route: 'San Agustín - E. Central de Ferrocarriles',
         type: 'bus',
         busType: 'main'
     },
@@ -69,13 +69,13 @@ export const mainRoutes: VehicleRoute[] = [
     },
     {
         code: 'P12',
-        route: 'Santiago de las Vegas - Parque de la Fraternidad',
+        route: 'Stgo. de las Vegas - Parque de la Fraternidad',
         type: 'bus',
         busType: 'main'
     },
     {
         code: 'P13',
-        route: 'Santiago de las Vegas - Parque de la Fraternidad',
+        route: 'Stgo. de las Vegas - Parque de la Fraternidad',
         type: 'bus',
         busType: 'main'
     },
@@ -93,13 +93,13 @@ export const mainRoutes: VehicleRoute[] = [
     },
     {
         code: 'P16',
-        route: 'Santiago de las Vegas - Hospital Hermanos Ameijeiras',
+        route: 'Stgo. de las Vegas - H. Hermanos Ameijeiras',
         type: 'bus',
         busType: 'main'
     },
     {
         code: 'PC',
-        route: 'Hospital Naval - Playa',
+        route: 'H. Naval - Playa',
         type: 'bus',
         busType: 'main'
     },
