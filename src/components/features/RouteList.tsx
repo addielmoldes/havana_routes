@@ -1,10 +1,14 @@
 import {VehicleRoute} from "@/types";
 import {Search} from 'lucide-react';
 import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card.tsx";
+import {useContext} from "react";
+import {SearchContext} from "@/lib/contexts.ts";
 
-export default function RouteList({routes, searchQuery}: { routes: VehicleRoute[], searchQuery: string }) {
+export default function RouteList({routes}: { routes: VehicleRoute[] }) {
 
-    const filteredRoutes = searchQuery ? routes.filter((vehicle: VehicleRoute) => {
+    const searchQuery: string = useContext<string>(SearchContext)
+
+    const filteredRoutes: VehicleRoute[] = searchQuery ? routes.filter((vehicle: VehicleRoute) => {
         return vehicle.code.includes(searchQuery.toUpperCase());
     }) : routes;
 

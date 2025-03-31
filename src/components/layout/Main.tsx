@@ -2,20 +2,23 @@ import HeaderContainer from './HeaderContainer.tsx'
 import TaxisContainer from "@/components/features/taxis/TaxisContainer.tsx";
 import BusesContainer from "@/components/features/buses/BusesContainer.tsx";
 import SettingsContainer from "@/components/features/settings/SettingsContainer.tsx";
-import {useState} from "react";
+import {useContext, useState} from "react";
+import {SearchContext, SectionContext} from "@/lib/contexts.ts";
+import {Section} from "@/types";
 
-function Main({section}: { section: string }) {
-    const [searchQuery, setSearchQuery] = useState("");
+export default function Main() {
+    const [search, setSearch] = useState('');
+    const section: Section = useContext(SectionContext);
 
     return (
         <main className="grow flex flex-col overflow-hidden">
-            <HeaderContainer section={section} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+            <SearchContext value={search}>
+                <HeaderContainer setSearch={setSearch}/>
 
-            {section === 'taxis' && <TaxisContainer searchQuery={searchQuery}/>}
-            {section === 'buses' && <BusesContainer searchQuery={searchQuery}/>}
-            {section === 'settings' && <SettingsContainer/>}
+                {section === 'taxis' && <TaxisContainer/>}
+                {section === 'buses' && <BusesContainer/>}
+                {section === 'settings' && <SettingsContainer/>}
+            </SearchContext>
         </main>
     );
 }
-
-export default Main;

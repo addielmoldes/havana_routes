@@ -2,16 +2,18 @@ import NavBottomBar from "@/components/layout/NavBottomBar.tsx";
 import Main from "@/components/layout/Main.tsx";
 import {ThemeProvider} from "@/utils/theme-provider.tsx";
 import {useState} from "react";
+import {SectionContext} from "@/lib/contexts.ts";
+import {Section} from "@/types";
 
-function App() {
-    const [section, setSection] = useState<string>('taxis');
+export default function App() {
+    const [section, setSection] = useState<Section>('taxis');
 
     return (
         <ThemeProvider defaultTheme="system" storageKey="ui-theme">
-            <Main section={section}/>
-            <NavBottomBar section={section} setSection={setSection}/>
+            <SectionContext value={section}>
+                <Main/>
+                <NavBottomBar setSection={setSection}/>
+            </SectionContext>
         </ThemeProvider>
     )
 }
-
-export default App

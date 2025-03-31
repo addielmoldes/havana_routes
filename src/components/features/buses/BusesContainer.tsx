@@ -4,7 +4,7 @@ import {mainRoutes} from "@/utils/main-routes.ts";
 import {supplierRoutes} from "@/utils/supplier-routes.ts";
 import {secondaryRoutes} from "@/utils/secondary-routes.ts";
 
-export default function BusesContainer({searchQuery}: { searchQuery: string }) {
+export default function BusesContainer() {
 
     return (
         <Tabs defaultValue="mainRoutes" className="h-[100%] overflow-hidden">
@@ -17,15 +17,15 @@ export default function BusesContainer({searchQuery}: { searchQuery: string }) {
             </div>
             <div className="overflow-auto">
                 <TabsContent value="mainRoutes" className="px-3">
-                    <RouteList routes={mainRoutes} searchQuery={searchQuery}/>
+                    <RouteList routes={mainRoutes}/>
                 </TabsContent>
 
                 <TabsContent value="supplierRoutes" className="px-3">
-                    <RouteList routes={supplierRoutes} searchQuery={searchQuery}/>
+                    <RouteList routes={supplierRoutes}/>
                 </TabsContent>
 
                 <TabsContent value="otherRoutes" className="px-3">
-                    <RouteList routes={secondaryRoutes} searchQuery={searchQuery}/>
+                    <RouteList routes={secondaryRoutes}/>
                 </TabsContent>
             </div>
         </Tabs>
