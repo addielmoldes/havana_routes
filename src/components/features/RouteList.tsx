@@ -2,7 +2,8 @@ import {VehicleRoute} from "@/types";
 import {Search} from 'lucide-react';
 import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card.tsx";
 import {useContext} from "react";
-import {SearchContext} from "@/lib/contexts.ts";
+import {SearchContext} from "@/shared/contexts.ts";
+import CardOptions from "@/components/layout/CardOptions.tsx";
 
 export default function RouteList({routes}: { routes: VehicleRoute[] }) {
 
@@ -15,13 +16,15 @@ export default function RouteList({routes}: { routes: VehicleRoute[] }) {
     const routeCards = filteredRoutes.map((vehicle: VehicleRoute) =>
         <Card
             key={vehicle.code}
-            className="mb-2"
+            className="mb-2 relative"
             onClick={() => console.log('mapa')}
         >
             <CardHeader>
                 <CardTitle>{vehicle.code}</CardTitle>
                 <CardDescription>{vehicle.route}</CardDescription>
             </CardHeader>
+
+            <CardOptions/>
         </Card>
     );
 
