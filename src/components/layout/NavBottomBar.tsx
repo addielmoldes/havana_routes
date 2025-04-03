@@ -2,7 +2,7 @@ import {Button} from '@/components/ui/button.tsx'
 import {CarFront, BusFront, Settings} from 'lucide-react'
 import {Section} from "@/types";
 import {useContext} from "react";
-import {SectionContext} from "@/lib/contexts.ts";
+import {SectionContext} from "@/shared/contexts.ts";
 
 export default function NavBottomBar({setSection}: { setSection: (section: Section) => void }) {
 

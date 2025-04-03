@@ -2,7 +2,7 @@ import NavBottomBar from "@/components/layout/NavBottomBar.tsx";
 import Main from "@/components/layout/Main.tsx";
 import {ThemeProvider} from "@/utils/theme-provider.tsx";
 import {useState} from "react";
-import {SectionContext} from "@/lib/contexts.ts";
+import {SectionContext} from "@/shared/contexts.ts";
 import {Section} from "@/types";
 
 export default function App() {

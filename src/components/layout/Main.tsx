@@ -3,7 +3,7 @@ import TaxisContainer from "@/components/features/taxis/TaxisContainer.tsx";
 import BusesContainer from "@/components/features/buses/BusesContainer.tsx";
 import SettingsContainer from "@/components/features/settings/SettingsContainer.tsx";
 import {useContext, useState} from "react";
-import {SearchContext, SectionContext} from "@/lib/contexts.ts";
+import {SearchContext, SectionContext} from "@/shared/contexts.ts";
 import {Section} from "@/types";
 
 export default function Main() {
