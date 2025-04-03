@@ -1,16 +1,17 @@
 import {Button} from "@/components/ui/button.tsx";
 import {Search} from "lucide-react";
-import {Input} from "@/components/ui/input.tsx";
-import {ChangeEvent, KeyboardEvent, useContext, useRef, useState} from "react";
+import {ChangeEvent, KeyboardEvent, RefObject, useContext, useEffect, useRef, useState} from "react";
 import {Badge} from "@/components/ui/badge.tsx";
-import {SearchContext, SectionContext} from "@/lib/contexts.ts";
+import {SearchContext, SectionContext} from "@/shared/contexts.ts";
 import {Section} from "@/types";
+import {Input} from "@/components/ui/input.tsx";
 
 export default function HeaderContainer({setSearch}: { setSearch: (search: string) => void }) {
     const search = useContext(SearchContext);
-    const searchInputRef = useRef<HTMLInputElement>(null);
     const section: Section = useContext<Section>(SectionContext);
     const [showSearch, setShowSearch] = useState(false);
+    const inputRef: RefObject<null | HTMLInputElement> = useRef(null);
+
 
     // TODO: Replace with I18n
     let sectionTitle: string = 'Ruteros';
@@ -22,9 +23,14 @@ export default function HeaderContainer({setSearch}: { setSearch: (search: strin
         sectionTitle = 'Ajustes';
     }
 
+    useEffect(() => {
+        if (showSearch) {
+            inputRef.current?.focus();
+        }
+    });
+
     function handleClick() {
         setShowSearch(value => !value);
-        searchInputRef.current?.focus();
     }
 
     function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
@@ -54,7 +60,7 @@ export default function HeaderContainer({setSearch}: { setSearch: (search: strin
             </div>
             {showSearch && (
                 <Input
-                    ref={searchInputRef}
+                    ref={inputRef}
                     type="search"
                     placeholder="Buscar"
                     value={search}
