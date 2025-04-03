@@ -17,7 +17,7 @@ export default function CardOptions() {
         <div className="absolute top-1 right-2">
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <Ellipsis className="text-neutral-400"/>
+                    <Ellipsis className="text-accent"/>
                 </DropdownMenuTrigger>
 
                 <DropdownMenuContent collisionPadding={5}>
