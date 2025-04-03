@@ -27,7 +27,7 @@ export default function HeaderContainer({setSearch}: { setSearch: (search: strin
         if (showSearch) {
             inputRef.current?.focus();
         }
-    });
+    }, [showSearch]);
 
     function handleClick() {
         setShowSearch(value => !value);
