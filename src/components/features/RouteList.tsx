@@ -16,10 +16,10 @@ export default function RouteList({routes}: { routes: VehicleRoute[] }) {
     const routeCards = filteredRoutes.map((vehicle: VehicleRoute) =>
         <Card
             key={vehicle.code}
-            className="mb-2 relative"
+            className="mb-2 relative py-3"
             onClick={() => console.log('mapa')}
         >
-            <CardHeader>
+            <CardHeader className="px-3">
                 <CardTitle>{vehicle.code}</CardTitle>
                 <CardDescription>{vehicle.route}</CardDescription>
             </CardHeader>
