@@ -33,6 +33,10 @@ export default function HeaderContainer({setSearch}: { setSearch: (search: strin
         setShowSearch(value => !value);
     }
 
+    function handleOnBlur() {
+        setShowSearch(false);
+    }
+
     function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
         if (event.key === 'Enter') {
             setShowSearch(false);
@@ -65,6 +69,7 @@ export default function HeaderContainer({setSearch}: { setSearch: (search: strin
                     placeholder="Buscar"
                     value={search}
                     onChange={handleOnChange}
+                    onBlur={handleOnBlur}
                     onKeyDown={handleKeyDown}/>
             )}
 
