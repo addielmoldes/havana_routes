@@ -1,12 +1,11 @@
 import {Button} from '@/components/ui/button.tsx'
 import {CarFront, BusFront, Settings} from 'lucide-react'
 import {Section} from "@/types";
-import {useContext} from "react";
-import {SectionContext} from "@/shared/contexts.ts";
+import useSection from "@/hooks/useSection.ts";
 
-export default function NavBottomBar({setSection}: { setSection: (section: Section) => void }) {
+export default function NavBottomBar() {
 
-    const section: Section = useContext<Section>(SectionContext);
+    const {section, setSection} = useSection();
 
     const handleClick = (section: Section) => {
         setSection(section);
