@@ -1,4 +1,4 @@
-export type Section = 'taxis' | 'buses' | 'settings';
+export type Section = 'taxis' | 'buses' | 'settings' | 'map';
 
 export interface Bus {
     readonly id_ruta: number;

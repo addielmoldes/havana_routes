@@ -4,20 +4,24 @@ import BusesContainer from "@/components/features/buses/BusesContainer.tsx";
 import SettingsContainer from "@/components/features/settings/SettingsContainer.tsx";
 import {useContext, useState} from "react";
 import {SearchContext, SectionContext} from "@/shared/contexts.ts";
-import {Section} from "@/types";
+import MapSection from "@/components/features/MapSection.tsx";
+import RouteProvider from "@/shared/RouteProvider.tsx";
 
 export default function Main() {
     const [search, setSearch] = useState('');
-    const section: Section = useContext(SectionContext);
+    const {section} = useContext(SectionContext);
 
     return (
         <main className="grow flex flex-col overflow-hidden">
             <SearchContext value={search}>
-                <HeaderContainer setSearch={setSearch}/>
+                <RouteProvider>
+                    <HeaderContainer setSearch={setSearch}/>
 
-                {section === 'taxis' && <TaxisContainer/>}
-                {section === 'buses' && <BusesContainer/>}
-                {section === 'settings' && <SettingsContainer/>}
+                    {section === 'taxis' && <TaxisContainer/>}
+                    {section === 'buses' && <BusesContainer/>}
+                    {section === 'settings' && <SettingsContainer/>}
+                    {section === 'map' && <MapSection/>}
+                </RouteProvider>
             </SearchContext>
         </main>
     );
