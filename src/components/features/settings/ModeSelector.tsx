@@ -1,4 +1,4 @@
-import {useTheme} from "@/utils/theme-provider.tsx";
+import useTheme from "@/hooks/useTheme.ts";
 import {
     DropdownMenu,
     DropdownMenuContent,
