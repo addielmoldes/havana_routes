@@ -15,7 +15,7 @@ interface MarkerObject {
 
 export default function MapSection() {
     const location: LatLngExpression = [23.136667, -82.358889];
-    const buses = routes.map((route: Bus): MarkerObject[] => {
+    const buses = routes.map((route: Bus): MarkerObject => {
         return {
             id: route.numero,
             ruta: route.ruta.trim(),
