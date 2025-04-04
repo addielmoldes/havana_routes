@@ -10,7 +10,7 @@ import {supplierBusIcon} from "@/utils/supplier-bus.icon.ts";
 interface MarkerObject {
     id: string;
     ruta: string;
-    latLong: LatLngExpresion;
+    latLong: LatLngExpression;
 }
 
 export default function MapSection() {
