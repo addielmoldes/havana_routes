@@ -7,9 +7,15 @@ import {Bus} from "@/types";
 import {mainBusIcon} from "@/utils/main-bus.icon.ts";
 import {supplierBusIcon} from "@/utils/supplier-bus.icon.ts";
 
+interface MarkerObject {
+    id: string;
+    ruta: string;
+    latLong: LatLngExpresion;
+}
+
 export default function MapSection() {
     const location: LatLngExpression = [23.136667, -82.358889];
-    const buses = routes.map((route: Bus): object => {
+    const buses = routes.map((route: Bus): MarkerObject[] => {
         return {
             id: route.numero,
             ruta: route.ruta.trim(),
@@ -17,7 +23,7 @@ export default function MapSection() {
         }
     });
 
-    const markers = buses.map((bus: object) => (
+    const markers = buses.map((bus: MarkerObject) => (
         <Marker position={bus.latLong} key={bus.id} icon={bus.ruta.startsWith('P') ? mainBusIcon : supplierBusIcon}>
             <Popup className="text-center">Ruta: {bus.ruta}</Popup>
         </Marker>
