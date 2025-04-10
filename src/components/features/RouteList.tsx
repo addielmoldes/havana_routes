@@ -1,19 +1,20 @@
 import {VehicleRoute} from "@/types";
 import {Search} from 'lucide-react';
 import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card.tsx";
-import {useContext} from "react";
+import {useContext, useMemo} from "react";
 import {RouteContext, SearchContext, SectionContext} from "@/shared/contexts.ts";
 import CardOptions from "@/components/layout/CardOptions.tsx";
 
 export default function RouteList({routes}: { routes: VehicleRoute[] }) {
-
     const searchQuery: string = useContext<string>(SearchContext)
     const {setSection} = useContext(SectionContext);
     const {setRoute} = useContext(RouteContext);
 
-    const filteredRoutes: VehicleRoute[] = searchQuery ? routes.filter((vehicle: VehicleRoute) => {
-        return vehicle.code.includes(searchQuery.toUpperCase());
-    }) : routes;
+    const filteredRoutes: VehicleRoute[] = useMemo(() => {
+        return searchQuery ?
+            routes.filter((vehicle: VehicleRoute) => vehicle.code.includes(searchQuery.toUpperCase())) :
+            routes
+    }, [searchQuery, routes]);
 
     function handleClick(vehicle: VehicleRoute) {
         setRoute(vehicle);
