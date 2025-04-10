@@ -6,6 +6,7 @@ import {useContext, useState} from "react";
 import {SearchContext, SectionContext} from "@/shared/contexts.ts";
 import MapSection from "@/components/features/MapSection.tsx";
 import RouteProvider from "@/shared/RouteProvider.tsx";
+import TokenProvider from "@/shared/TokenProvider.tsx";
 
 export default function Main() {
     const [search, setSearch] = useState('');
@@ -17,10 +18,12 @@ export default function Main() {
                 <RouteProvider>
                     <HeaderContainer setSearch={setSearch}/>
 
-                    {section === 'taxis' && <TaxisContainer/>}
-                    {section === 'buses' && <BusesContainer/>}
-                    {section === 'settings' && <SettingsContainer/>}
-                    {section === 'map' && <MapSection/>}
+                    <TokenProvider>
+                        {section === 'taxis' && <TaxisContainer/>}
+                        {section === 'buses' && <BusesContainer/>}
+                        {section === 'settings' && <SettingsContainer/>}
+                        {section === 'map' && <MapSection/>}
+                    </TokenProvider>
                 </RouteProvider>
             </SearchContext>
         </main>

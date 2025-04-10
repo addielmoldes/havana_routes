@@ -23,3 +23,5 @@ export const RouteContext = createContext<RouteProvider>({
     },
     setRoute: () => null
 })
+
+export const AuthContext = createContext<string>('');
