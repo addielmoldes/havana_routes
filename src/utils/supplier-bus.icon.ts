@@ -1,7 +1,7 @@
 import {Icon} from 'leaflet'
-import supplierBus from '../../assets/supplierBus.webp?url'
+import supplierBusMarker from '../../assets/supplierBusMarker.png?url'
 
 export const supplierBusIcon = new Icon({
-    iconUrl: supplierBus,
-    iconSize: [64, 48]
+    iconUrl: supplierBusMarker,
+    iconSize: [64, 64]
 });

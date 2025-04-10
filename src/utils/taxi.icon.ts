@@ -1,7 +1,7 @@
 import {Icon} from 'leaflet'
-import taxi from '../../assets/taxi.webp?url'
+import taxiMarker from '../../assets/taxiMarker.png?url'
 
 export const taxiIcon = new Icon({
-    iconUrl: taxi,
+    iconUrl: taxiMarker,
     iconSize: [48, 48]
 });
