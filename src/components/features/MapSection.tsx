@@ -1,38 +1,50 @@
-// import useRoute from "@/hooks/useRoute.ts";
 import 'leaflet/dist/leaflet.css';
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
-import {LatLngExpression} from "leaflet";
-import {routes} from '@/utils/rutas.ts'
+import {Icon, LatLngExpression} from "leaflet";
 import {Bus} from "@/types";
+import useFetch from "@/hooks/useFetch.ts";
+import useRoute from "@/hooks/useRoute.ts";
 import {mainBusIcon} from "@/utils/main-bus.icon.ts";
+import {taxiIcon} from "@/utils/taxi.icon.ts";
 import {supplierBusIcon} from "@/utils/supplier-bus.icon.ts";
-
-interface MarkerObject {
-    id: string;
-    ruta: string;
-    latLong: LatLngExpression;
-}
+import {secondaryBusIcon} from "@/utils/secondary-bus.icon.ts";
 
 export default function MapSection() {
-    const location: LatLngExpression = [23.136667, -82.358889];
-    const buses = routes.map((route: Bus): MarkerObject => {
-        return {
-            id: route.numero,
-            ruta: route.ruta.trim(),
-            latLong: [route.lat, route.lon],
-        }
-    });
+    const busData: Bus[] = useFetch('/busruta');
+    const {route} = useRoute();
 
-    const markers = buses.map((bus: MarkerObject) => (
-        <Marker position={bus.latLong} key={bus.id} icon={bus.ruta.startsWith('P') ? mainBusIcon : supplierBusIcon}>
-            <Popup className="text-center">Ruta: {bus.ruta}</Popup>
-        </Marker>
-    ))
-    // const {route} = useRoute();
+    let icon: Icon;
+    switch (route.type) {
+        case 'bus':
+            switch (route.busType) {
+                case 'main':
+                    icon = mainBusIcon;
+                    break;
+                case 'supplier':
+                    icon = supplierBusIcon;
+                    break;
+                case 'secondary':
+                    icon = secondaryBusIcon;
+                    break;
+            }
+            break;
+        case "taxi":
+            icon = taxiIcon;
+            break;
+    }
+
+    const userLocation: LatLngExpression = [23.136667, -82.358889];
+    const buses = busData.filter((bus: Bus) => bus.ruta.includes(route.code));
+    const busMarkers = buses.map((bus: Bus) => (
+       <Marker key={bus.id_ruta} position={[bus.lat, bus.lon]} icon={icon}>
+           <Popup></Popup>
+       </Marker>
+    ));
+
     return (
         <div className="px-1 h-full">
             <MapContainer
-                center={location}
+                center={userLocation}
                 zoom={12}
                 scrollWheelZoom={false}
                 className="h-full rounded"
@@ -40,8 +52,8 @@ export default function MapSection() {
                 attributionControl={false}
             >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                <Marker position={location}/>
-                {markers}
+                <Marker position={userLocation}/>
+                {busMarkers}
             </MapContainer>
         </div>
     );
