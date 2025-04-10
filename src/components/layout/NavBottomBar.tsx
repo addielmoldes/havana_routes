@@ -4,7 +4,6 @@ import {Section} from "@/types";
 import useSection from "@/hooks/useSection.ts";
 
 export default function NavBottomBar() {
-
     const {section, setSection} = useSection();
 
     const handleClick = (section: Section) => {

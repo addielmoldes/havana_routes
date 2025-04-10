@@ -9,6 +9,7 @@ export type SectionProvider = {
 
 export default function SectionProvider({children}: { children: ReactNode }) {
     const [section, setSection] = useState<Section>('taxis');
+
     return (
         <SectionContext.Provider value={{section, setSection}}>
             {children}
