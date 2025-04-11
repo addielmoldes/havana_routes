@@ -23,7 +23,7 @@ export default function useFetch(resource: string) {
         switch (route.type) {
             case 'bus':
                 authToken = {apikey: token};
-                getData('/api/buses');
+                getData(import.meta.env.VITE_BUS_URL);
                 break;
             case 'taxi':
                 authToken = {Authorization: `Bearer ${token}`};
