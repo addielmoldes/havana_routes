@@ -1,6 +1,8 @@
 import 'leaflet/dist/leaflet.css';
+import icon from "leaflet/dist/images/marker-icon.png";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
-import {Icon, LatLngExpression} from "leaflet";
+import {L, Icon, LatLngExpression} from "leaflet";
 import {Bus} from "@/types";
 import useFetch from "@/hooks/useFetch.ts";
 import useRoute from "@/hooks/useRoute.ts";
@@ -9,7 +11,13 @@ import {taxiIcon} from "@/utils/taxi.icon.ts";
 import {supplierBusIcon} from "@/utils/supplier-bus.icon.ts";
 import {secondaryBusIcon} from "@/utils/secondary-bus.icon.ts";
 
+const DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+});
+
 export default function MapSection() {
+    L.Marker.prototype.options.icon = DefaultIcon;
     const busData: Bus[] = useFetch('/busruta');
     const {route} = useRoute();
 
