@@ -1,20 +1,21 @@
-import 'leaflet/dist/leaflet.css';
-import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
-import {Icon} from "leaflet";
+import useRoute from "@/hooks/useRoute.ts";
 import {Bus, BusType} from "@/types";
 import useFetch from "@/hooks/useFetch.ts";
-import useRoute from "@/hooks/useRoute.ts";
-import {userIcon} from "@/utils/map-markers/user.icon.ts";
+import useLocation from "@/hooks/useLocation.ts";
+import {Marker, Popup, TileLayer, useMap} from "react-leaflet";
+import {Icon} from "leaflet";
 import {mainBusIcon} from "@/utils/map-markers/main-bus.icon.ts";
-import {taxiIcon} from "@/utils/map-markers/taxi.icon.ts";
 import {supplierBusIcon} from "@/utils/map-markers/supplier-bus.icon.ts";
 import {secondaryBusIcon} from "@/utils/map-markers/secondary-bus.icon.ts";
-import useLocation from "@/hooks/useLocation.ts";
+import {taxiIcon} from "@/utils/map-markers/taxi.icon.ts";
+import {useEffect} from "react";
+import {userIcon} from "@/utils/map-markers/user.icon.ts";
 
-export default function MapSection() {
-    const location = useLocation();
-    const busData: Bus[] = useFetch('/busruta');
+export default function MapContent() {
     const {route} = useRoute();
+    const busData: Bus[] = useFetch('/busruta');
+    const location = useLocation();
+    const map = useMap();
 
     let icon: Icon;
     switch (route.type) {
@@ -36,6 +37,12 @@ export default function MapSection() {
             break;
     }
 
+    useEffect(() => {
+        if (location) {
+            map.flyTo(location);
+        }
+    });
+
     const buses = busData.filter((vehicle: Bus) => vehicle.id_ruta === route.id);
     const busMarkers = buses.map((vehicle: Bus) => (
         <Marker key={vehicle.numero} position={[vehicle.lat, vehicle.lon]} icon={icon}>
@@ -55,20 +62,10 @@ export default function MapSection() {
     ));
 
     return (
-        <div className="px-1 h-full">
-            <MapContainer
-                center={location || [23.136667, -82.358889]}
-                zoom={12}
-                className="h-full rounded"
-                zoomControl={false}
-                attributionControl={false}
-            >
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-
-                {location && <Marker position={location} icon={userIcon}/>}
-
-                {busMarkers}
-            </MapContainer>
-        </div>
-    );
+        <>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+            {location && <Marker position={location} icon={userIcon}/>}
+            {busMarkers}
+        </>
+    )
 }

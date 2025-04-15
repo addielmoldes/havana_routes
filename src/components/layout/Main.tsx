@@ -4,7 +4,7 @@ import BusesContainer from "@/components/features/buses/BusesContainer.tsx";
 import SettingsContainer from "@/components/features/settings/SettingsContainer.tsx";
 import {useContext, useState} from "react";
 import {SearchContext, SectionContext} from "@/shared/contexts.ts";
-import MapSection from "@/components/features/MapSection.tsx";
+import MapSection from "@/components/features/map/MapSection.tsx";
 import RouteProvider from "@/shared/RouteProvider.tsx";
 import TokenProvider from "@/shared/TokenProvider.tsx";
 
