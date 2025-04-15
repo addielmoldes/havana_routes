@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import {toast} from "sonner";
+import {LatLngExpression} from "leaflet";
 
 export default function useLocation() {
     const [location, setLocation] = useState<number[] | null>(null);
@@ -41,5 +42,5 @@ export default function useLocation() {
         }
     }, []);
 
-    return location;
+    return location as LatLngExpression;
 }

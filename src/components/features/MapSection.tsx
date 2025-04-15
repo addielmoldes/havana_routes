@@ -1,6 +1,6 @@
 import 'leaflet/dist/leaflet.css';
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
-import {Icon, LatLngExpression} from "leaflet";
+import {Icon} from "leaflet";
 import {Bus, BusType} from "@/types";
 import useFetch from "@/hooks/useFetch.ts";
 import useRoute from "@/hooks/useRoute.ts";
@@ -57,7 +57,7 @@ export default function MapSection() {
     return (
         <div className="px-1 h-full">
             <MapContainer
-                center={[23.136667, -82.358889]}
+                center={location || [23.136667, -82.358889]}
                 zoom={12}
                 className="h-full rounded"
                 zoomControl={false}
@@ -65,7 +65,7 @@ export default function MapSection() {
             >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
 
-                {location && <Marker position={location as LatLngExpression} icon={userIcon}/>}
+                {location && <Marker position={location} icon={userIcon}/>}
 
                 {busMarkers}
             </MapContainer>
