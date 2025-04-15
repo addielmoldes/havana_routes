@@ -9,8 +9,10 @@ import {mainBusIcon} from "@/utils/map-markers/main-bus.icon.ts";
 import {taxiIcon} from "@/utils/map-markers/taxi.icon.ts";
 import {supplierBusIcon} from "@/utils/map-markers/supplier-bus.icon.ts";
 import {secondaryBusIcon} from "@/utils/map-markers/secondary-bus.icon.ts";
+import useLocation from "@/hooks/useLocation.ts";
 
 export default function MapSection() {
+    const location = useLocation();
     const busData: Bus[] = useFetch('/busruta');
     const {route} = useRoute();
 
@@ -34,7 +36,6 @@ export default function MapSection() {
             break;
     }
 
-    const userLocation: LatLngExpression = [23.136667, -82.358889];
     const buses = busData.filter((vehicle: Bus) => vehicle.id_ruta === route.id);
     const busMarkers = buses.map((vehicle: Bus) => (
         <Marker key={vehicle.numero} position={[vehicle.lat, vehicle.lon]} icon={icon}>
@@ -56,14 +57,16 @@ export default function MapSection() {
     return (
         <div className="px-1 h-full">
             <MapContainer
-                center={userLocation}
+                center={[23.136667, -82.358889]}
                 zoom={12}
                 className="h-full rounded"
                 zoomControl={false}
                 attributionControl={false}
             >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                <Marker position={userLocation} icon={userIcon}/>
+
+                {location && <Marker position={location as LatLngExpression} icon={userIcon}/>}
+
                 {busMarkers}
             </MapContainer>
         </div>
