@@ -2,6 +2,7 @@ import {createContext} from "react";
 import {ThemeProviderState} from "@/utils/theme-provider.tsx";
 import {SectionProvider} from "@/shared/SectionProvider.tsx";
 import {RouteProvider} from "@/shared/RouteProvider.tsx";
+import {BusTab} from "@/components/features/buses/BusesContainer.tsx";
 
 export const ThemeProviderContext = createContext<ThemeProviderState>({
     theme: 'system',
@@ -29,3 +30,5 @@ export const RouteContext = createContext<RouteProvider>({
 })
 
 export const AuthContext = createContext<string>('');
+
+export const BusTabContext = createContext<BusTab>('main');
