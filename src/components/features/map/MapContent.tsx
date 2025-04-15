@@ -41,7 +41,7 @@ export default function MapContent() {
         if (location) {
             map.flyTo(location);
         }
-    });
+    }, [location]);
 
     const buses = busData.filter((vehicle: Bus) => vehicle.id_ruta === route.id);
     const busMarkers = buses.map((vehicle: Bus) => (
