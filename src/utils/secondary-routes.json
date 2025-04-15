@@ -1,0 +1,532 @@
+[
+  {
+    "id": 395,
+    "ruta": "8",
+    "origen": "PLAYA",
+    "destino": "CUBA Y PEÑA POBRE",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 411,
+    "ruta": "34",
+    "origen": "LISA",
+    "destino": "TNAL FFCC",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 457,
+    "ruta": "34L",
+    "origen": "LISA",
+    "destino": "MIRAMAR",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 412,
+    "ruta": "36",
+    "origen": "LISA",
+    "destino": "PUNTA BRAVA - GUATAO",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 413,
+    "ruta": "40",
+    "origen": "LISA",
+    "destino": "SANTA FE",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 414,
+    "ruta": "43",
+    "origen": "BARBOSA",
+    "destino": "TNAL FFCC",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 435,
+    "ruta": "45",
+    "origen": "STGO. VEGAS",
+    "destino": "LUTGARDITA",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 436,
+    "ruta": "46",
+    "origen": "STGO. VEGAS",
+    "destino": "FINCA EL ROCIO",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 415,
+    "ruta": "55",
+    "origen": "BARBOSA",
+    "destino": "HOSP. AMEIJEIRAS",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 397,
+    "ruta": "69",
+    "origen": "PLAYA",
+    "destino": "LAWTON",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 398,
+    "ruta": "92",
+    "origen": "PLAYA",
+    "destino": "PUNTA BRAVA",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 399,
+    "ruta": "93",
+    "origen": "PLAYA",
+    "destino": "BARBOSA - JAIMANITAS",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 417,
+    "ruta": "113",
+    "origen": "BARBOSA",
+    "destino": "LAS GUASIMAS",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 437,
+    "ruta": "160",
+    "origen": "STGO. VEGAS",
+    "destino": "LA CEGUERA",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 438,
+    "ruta": "177",
+    "origen": "STGO. VEGAS",
+    "destino": "CUJAE",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 400,
+    "ruta": "179",
+    "origen": "PLAYA",
+    "destino": "VIRGEN DEL CAMINO",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 419,
+    "ruta": "180",
+    "origen": "LISA",
+    "destino": "SANTA FE - PUNTA BRAVA",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 401,
+    "ruta": "191",
+    "origen": "PLAYA",
+    "destino": "SANTA FE",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 402,
+    "ruta": "192",
+    "origen": "PLAYA",
+    "destino": "GUATAO - PUNTA BRAVA",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 403,
+    "ruta": "193",
+    "origen": "PLAYA",
+    "destino": "ATABEY - JAIMANITAS",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 420,
+    "ruta": "222",
+    "origen": "LISA",
+    "destino": "P. FRATERNIDAD",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 404,
+    "ruta": "420",
+    "origen": "PLAYA",
+    "destino": "BARACOA",
+    "id_terminal": 16,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 421,
+    "ruta": "436",
+    "origen": "LISA",
+    "destino": "GUATAO - PUNTA BRAVA",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 439,
+    "ruta": "440",
+    "origen": "STGO. VEGAS",
+    "destino": "AUTOPISTA MEDIODIA",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 440,
+    "ruta": "450",
+    "origen": "STGO. VEGAS",
+    "destino": "MARIANAO",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 422,
+    "ruta": "450A",
+    "origen": "LISA",
+    "destino": "FONTANAR",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 441,
+    "ruta": "450CF",
+    "origen": "STGO. VEGAS",
+    "destino": "MARIANAO",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 442,
+    "ruta": "473",
+    "origen": "STGO. VEGAS",
+    "destino": "HOSP. NACIONAL",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 466,
+    "ruta": "476",
+    "origen": "STGO. VEGAS",
+    "destino": "LA CEIBA",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 423,
+    "ruta": "486",
+    "origen": "LISA",
+    "destino": "UCI - PUNTA BRAVA",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 424,
+    "ruta": "487",
+    "origen": "LISA",
+    "destino": "LAS MARGARITAS",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 444,
+    "ruta": "488",
+    "origen": "STGO. VEGAS",
+    "destino": "HOSP. JULIO TRIGO",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 425,
+    "ruta": "490",
+    "origen": "LISA",
+    "destino": "UCI",
+    "id_terminal": 5,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 377,
+    "ruta": "C1",
+    "origen": "COTORRO",
+    "destino": "COTORRO",
+    "id_terminal": 4,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 378,
+    "ruta": "C1CF",
+    "origen": "COTORRO",
+    "destino": "TUNEL BAHIA",
+    "id_terminal": 4,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 27,
+    "ruta": "C3",
+    "origen": "GUANABO",
+    "destino": "SANTA BARBARA",
+    "id_terminal": 14,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 363,
+    "ruta": "C4",
+    "origen": "GUANABO",
+    "destino": "ENTRONQUE SAN GABRIEL",
+    "id_terminal": 14,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 28,
+    "ruta": "C5",
+    "origen": "GUANABO",
+    "destino": "JARUCO",
+    "id_terminal": 14,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 22,
+    "ruta": "C5L",
+    "origen": "GUANABO",
+    "destino": "CASTILLA",
+    "id_terminal": 14,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 389,
+    "ruta": "C6",
+    "origen": "GUANABACOA",
+    "destino": "LA SEPULTURA",
+    "id_terminal": 7,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 356,
+    "ruta": "C7",
+    "origen": "RPTO. GUITERAS",
+    "destino": "BRISAS DEL MAR",
+    "id_terminal": 12,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 409,
+    "ruta": "CB",
+    "origen": "RPTO. CAMILO CIENFUEGOS",
+    "destino": "CUBA Y PEÑA POBRE",
+    "id_terminal": 12,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 446,
+    "ruta": "CXXN",
+    "origen": "STGO. VEGAS",
+    "destino": "TERMINAL 5",
+    "id_terminal": 3,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 429,
+    "ruta": "IP",
+    "origen": "FORTUNA",
+    "destino": "EXPOCUBA",
+    "id_terminal": 13,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 67,
+    "ruta": "R1",
+    "origen": "LAWTON",
+    "destino": "FORTUNA",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 243,
+    "ruta": "R15",
+    "origen": "LAWTON",
+    "destino": "AVE PUERTO",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 283,
+    "ruta": "R23",
+    "origen": "LAWTON",
+    "destino": "GY 25, VEDADO",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 247,
+    "ruta": "R25",
+    "origen": "LAWTON",
+    "destino": "RPTO. REBOREDO",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 254,
+    "ruta": "R37",
+    "origen": "LAWTON",
+    "destino": "MIRAMAR",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 245,
+    "ruta": "R54",
+    "origen": "LAWTON",
+    "destino": "PARQUE EL CURITA",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 244,
+    "ruta": "R88",
+    "origen": "LAWTON",
+    "destino": "FINCA EL ROCIO",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 301,
+    "ruta": "R88CF",
+    "origen": "LAWTON",
+    "destino": "PUENTE CALABAZAR",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 253,
+    "ruta": "R174",
+    "origen": "LAWTON",
+    "destino": "LINEA Y F, VEDADO",
+    "id_terminal": 11,
+    "red": 2,
+    "type": "bus",
+    "id_prov": 1
+  }
+]

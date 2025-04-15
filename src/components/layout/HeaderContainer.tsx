@@ -21,7 +21,7 @@ export default function HeaderContainer({setSearch}: { setSearch: (search: strin
             header = 'Ajustes';
             break;
         case 'map':
-            header = `Ruta ${route.code}`;
+            header = `Ruta ${route.ruta}`;
             break;
         default:
             header = 'Ruteros';

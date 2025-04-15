@@ -1,7 +1,7 @@
 import 'leaflet/dist/leaflet.css';
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import {Icon, LatLngExpression} from "leaflet";
-import {Bus} from "@/types";
+import {Bus, BusType} from "@/types";
 import useFetch from "@/hooks/useFetch.ts";
 import useRoute from "@/hooks/useRoute.ts";
 import {mainBusIcon} from "@/utils/main-bus.icon.ts";
@@ -16,14 +16,14 @@ export default function MapSection() {
     let icon: Icon;
     switch (route.type) {
         case 'bus':
-            switch (route.busType) {
-                case 'main':
+            switch (route.red) {
+                case BusType.main:
                     icon = mainBusIcon;
                     break;
-                case 'supplier':
+                case BusType.supplier:
                     icon = supplierBusIcon;
                     break;
-                case 'secondary':
+                case BusType.secondary:
                     icon = secondaryBusIcon;
                     break;
             }
@@ -34,11 +34,22 @@ export default function MapSection() {
     }
 
     const userLocation: LatLngExpression = [23.136667, -82.358889];
-    const buses = busData.filter((bus: Bus) => bus.ruta.includes(route.code));
-    const busMarkers = buses.map((bus: Bus) => (
-       <Marker key={bus.id_ruta} position={[bus.lat, bus.lon]} icon={icon}>
-           <Popup></Popup>
-       </Marker>
+    const buses = busData.filter((vehicle: Bus) => vehicle.id_ruta === route.id);
+    const busMarkers = buses.map((vehicle: Bus) => (
+        <Marker key={vehicle.numero} position={[vehicle.lat, vehicle.lon]} icon={icon}>
+            <Popup>
+                <h1 className="font-bold text-base">Ruta {route.ruta}</h1>
+                {route.type === 'bus' && vehicle.ubicacion && (
+                    <div><strong>Ubicación: </strong>{vehicle.ubicacion}</div>
+                )}
+                <div><strong>Origen: </strong>{route.origen}</div>
+                <div><strong>Destino: </strong>{route.destino}</div>
+                {route.type === 'bus' && vehicle.proxima_parada && (
+                    <div><strong>Próxima parada: </strong>{vehicle.proxima_parada}</div>
+                )}
+                <div><strong>Velocidad: </strong>{vehicle.velocidad} km/h</div>
+            </Popup>
+        </Marker>
     ));
 
     return (
@@ -46,7 +57,6 @@ export default function MapSection() {
             <MapContainer
                 center={userLocation}
                 zoom={12}
-                scrollWheelZoom={false}
                 className="h-full rounded"
                 zoomControl={false}
                 attributionControl={false}

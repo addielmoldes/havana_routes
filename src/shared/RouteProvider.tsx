@@ -9,9 +9,13 @@ export type RouteProvider = {
 
 export default function RouteProvider({children}: { children: ReactNode }) {
     const noRoute: VehicleRoute = {
-        code: '',
-        route: '',
-        type: 'taxi',
+        id: 1,
+        ruta: "P1",
+        origen: "LA ROSITA",
+        destino: "PLAYA",
+        id_terminal: 2,
+        red: 0,
+        type: "bus"
     };
     const [route, setRoute] = useState(noRoute);
 

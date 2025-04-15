@@ -17,9 +17,13 @@ export const SectionContext = createContext<SectionProvider>({
 
 export const RouteContext = createContext<RouteProvider>({
     route: {
-        code: '',
-        route: '',
-        type: 'taxi'
+        id: 1,
+        ruta: "P1",
+        origen: "LA ROSITA",
+        destino: "PLAYA",
+        id_terminal: 2,
+        red: 0,
+        type: 'bus'
     },
     setRoute: () => null
 })

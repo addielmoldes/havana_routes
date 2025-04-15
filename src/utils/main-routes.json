@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "ruta": "P1",
+    "origen": "LA ROSITA",
+    "destino": "PLAYA",
+    "id_terminal": 2,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 2,
+    "ruta": "P2",
+    "origen": "ALBERRO",
+    "destino": "CVD JOSE MARTI, VEDADO",
+    "id_terminal": 2,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 302,
+    "ruta": "P3",
+    "origen": "ALAMAR",
+    "destino": "PUENTE DE HIERRO",
+    "id_terminal": 6,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 307,
+    "ruta": "P4",
+    "origen": "SAN AGUSTIN",
+    "destino": "TERMINAL FFCC",
+    "id_terminal": 1,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 311,
+    "ruta": "P5",
+    "origen": "SAN AGUSTIN",
+    "destino": "TERMINAL FFCC",
+    "id_terminal": 1,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 313,
+    "ruta": "P6",
+    "origen": "RPTO. ELECTRICO",
+    "destino": "UNIVERSIDAD HABANA",
+    "id_terminal": 10,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 3,
+    "ruta": "P7",
+    "origen": "ALBERRO",
+    "destino": "PARQUE DE LA FRATERNIDAD",
+    "id_terminal": 2,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 314,
+    "ruta": "P8",
+    "origen": "RPTO. ELECTRICO",
+    "destino": "VILLA PANAMERICANA",
+    "id_terminal": 10,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 10,
+    "ruta": "P9",
+    "origen": "SANTA AMALIA",
+    "destino": "ISPJAE",
+    "id_terminal": 17,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 11,
+    "ruta": "P10",
+    "origen": "VIBORA",
+    "destino": "NAUTICO",
+    "id_terminal": 17,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 303,
+    "ruta": "P11",
+    "origen": "MICRO X",
+    "destino": "G Y 29, VEDADO",
+    "id_terminal": 6,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 295,
+    "ruta": "P12",
+    "origen": "STGO.",
+    "destino": "PARQUE DE LA FRATERNIDAD",
+    "id_terminal": 8,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 298,
+    "ruta": "P13",
+    "origen": "STGO.",
+    "destino": "PARQUE DE LA FRATERNIDAD",
+    "id_terminal": 8,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 312,
+    "ruta": "P14",
+    "origen": "SAN AGUSTIN",
+    "destino": "PARQUE DE LA FRATERNIDAD",
+    "id_terminal": 1,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 461,
+    "ruta": "P15",
+    "origen": "SANTA FE",
+    "destino": "G Y 25",
+    "id_terminal": 7,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 300,
+    "ruta": "P16",
+    "origen": "STGO.",
+    "destino": "HOSP. AMEJEIRAS",
+    "id_terminal": 8,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 455,
+    "ruta": "PC",
+    "origen": "SAN AGUSTIN",
+    "destino": "RPTO. C.CIENFUEGOS",
+    "id_terminal": 1,
+    "red": 0,
+    "type": "bus",
+    "id_prov": 1
+  }
+]

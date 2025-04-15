@@ -12,7 +12,7 @@ export default function RouteList({routes}: { routes: VehicleRoute[] }) {
 
     const filteredRoutes: VehicleRoute[] = useMemo(() => {
         return searchQuery ?
-            routes.filter((vehicle: VehicleRoute) => vehicle.code.includes(searchQuery.toUpperCase())) :
+            routes.filter((vehicle: VehicleRoute) => vehicle.ruta.includes(searchQuery.toUpperCase())) :
             routes
     }, [searchQuery, routes]);
 
@@ -23,13 +23,13 @@ export default function RouteList({routes}: { routes: VehicleRoute[] }) {
 
     const routeCards = filteredRoutes.map((vehicle: VehicleRoute) =>
         <Card
-            key={vehicle.code}
+            key={vehicle.id}
             className="mb-2 relative py-3"
             onClick={() => handleClick(vehicle)}
         >
             <CardHeader className="px-3">
-                <CardTitle>{vehicle.code}</CardTitle>
-                <CardDescription>{vehicle.route}</CardDescription>
+                <CardTitle>{vehicle.ruta}</CardTitle>
+                <CardDescription className="text-xs">{vehicle.origen} - {vehicle.destino}</CardDescription>
             </CardHeader>
 
             <CardOptions/>

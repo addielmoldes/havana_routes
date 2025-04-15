@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "ruta": "Ruta 1",
+    "origen": "Ave. Almendros y Rosales",
+    "descrip_origen": "Secundaria Rpto. Electrico Arroyo Naranjo",
+    "destino": "5ta e/ C y D",
+    "descrip_destino": "5ta y D, Vedado Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 2,
+    "ruta": "Ruta 2",
+    "origen": "Beatriz e/ 8 y 6",
+    "descrip_origen": "Frente Policlínico Capdevila Boyeros",
+    "destino": "F y 27",
+    "descrip_destino": "Interior del Parqueo Estatal, Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 3,
+    "ruta": "Ruta 3",
+    "origen": "266 y 27",
+    "descrip_origen": "San Agustín, Lisa",
+    "destino": "Egido y Bernaza",
+    "descrip_destino": "Parque Las Piedras, Habana Vieja",
+    "type": "taxi"
+  },
+  {
+    "id": 4,
+    "ruta": "Ruta 4",
+    "origen": "413 y 202 (17 y 16)",
+    "descrip_origen": "Stgo. de las Vegas, Boyeros",
+    "destino": "O e/ 27 y 25",
+    "descrip_destino": "27 y O, Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 5,
+    "ruta": "Ruta 5",
+    "origen": "413 y 202 (17 y 16)",
+    "descrip_origen": "Stgo. de las Vegas, Boyeros",
+    "destino": "Egido y Arsenal",
+    "descrip_destino": "Estacion Central FCC, Habana Vieja",
+    "type": "taxi"
+  },
+  {
+    "id": 6,
+    "ruta": "Ruta 6",
+    "origen": "Palma e/ 1era y Real",
+    "descrip_origen": "Santa Fe Guanabacoa, Guanabacoa",
+    "destino": "F y 27",
+    "descrip_destino": "Interior del Parqueo Estatal, Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 7,
+    "ruta": "Ruta 7",
+    "origen": "302 e/ 5ta y 7ma",
+    "descrip_origen": "Santa Fe, Playa",
+    "destino": "Egido y Arsenal",
+    "descrip_destino": "Estacion Central FCC, Habana Vieja",
+    "type": "taxi"
+  },
+  {
+    "id": 8,
+    "ruta": "Ruta 8",
+    "origen": "101 y 38",
+    "descrip_origen": "La Contuco. Cotorro",
+    "destino": "5ta e/C y D",
+    "descrip_destino": "5ta y D, Vedado Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 9,
+    "ruta": "Ruta 9",
+    "origen": "190 e/ 409 y 411",
+    "descrip_origen": "Parque Stgo. Vegas, Boyeros",
+    "destino": "Egido y Arsenal",
+    "descrip_destino": "Estacion Central FCC, Habana Vieja",
+    "type": "taxi"
+  },
+  {
+    "id": 10,
+    "ruta": "Ruta 10",
+    "origen": "Marti y Santuario",
+    "descrip_origen": "Emboque Regla, Regla",
+    "destino": "170 e/ 5ta y 1era",
+    "descrip_destino": "Flores, Playa",
+    "type": "taxi"
+  },
+  {
+    "id": 11,
+    "ruta": "Ruta 11",
+    "origen": "Ameijeiras e/ 5ta y 7ma",
+    "descrip_origen": "Base Taxis 82, San Miguel del Padrón",
+    "destino": "41B e/ 41 y 76",
+    "descrip_destino": "Hosp. Pando Ferrer, Liga Contra la Ceguera, Marianao",
+    "type": "taxi"
+  },
+  {
+    "id": 12,
+    "ruta": "Ruta 12",
+    "origen": "101 y 38",
+    "descrip_origen": "La Contuco, Cotorro",
+    "destino": "3ra A y 80",
+    "descrip_destino": "3ra A y 80, Playa",
+    "type": "taxi"
+  },
+  {
+    "id": 13,
+    "ruta": "Ruta 13",
+    "origen": "2 e/ 26 y 28",
+    "descrip_origen": "El Roble, Guanabacoa",
+    "destino": "3ra A y 80",
+    "descrip_destino": "3ra A y 80, Playa",
+    "type": "taxi"
+  },
+  {
+    "id": 14,
+    "ruta": "Ruta 14",
+    "origen": "46, e/ Ave. 247 y Ave. 249",
+    "descrip_origen": "Punta Brava, Lisa",
+    "destino": "11 e/ K y J",
+    "descrip_destino": "K, Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 15,
+    "ruta": "Ruta 15",
+    "origen": "5taB e/ 164 y 164 A",
+    "descrip_origen": "Ave. los Cocos y Edificio 18 Plantas, Alamar",
+    "destino": "5ta e/ C y D",
+    "descrip_destino": "5ta y D, Vedado Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 16,
+    "ruta": "Ruta 16",
+    "origen": "190 y Ave. 5ta",
+    "descrip_origen": "Alamar Micro X, Habana del Este",
+    "destino": "3ra A y 80",
+    "descrip_destino": "3ra A y 80, Playa",
+    "type": "taxi"
+  },
+  {
+    "id": 17,
+    "ruta": "Ruta 17",
+    "origen": "Indep. y Almenares",
+    "descrip_origen": "Managua, Arroyo Naranjo",
+    "destino": "San Joaquín y Amenidad",
+    "descrip_destino": "Parque de La Normal, Cerro",
+    "type": "taxi"
+  },
+  {
+    "id": 18,
+    "ruta": "Ruta 18",
+    "origen": "190 y Ave. 5ta",
+    "descrip_origen": "Alamar Micro X Habana del Este",
+    "destino": "11 e/K y J",
+    "descrip_destino": "K, Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 19,
+    "ruta": "Ruta 19",
+    "origen": "266 y 27",
+    "descrip_origen": "San Agustin, La Lisa",
+    "destino": "Egido y Bernaza",
+    "descrip_destino": "Parque Las Piedras, Habana Vieja",
+    "type": "taxi"
+  },
+  {
+    "id": 20,
+    "ruta": "Ruta 20",
+    "origen": "Ameijeiras e/ 5ta y 7ma",
+    "descrip_origen": "Base Taxis 82, San Miguel del Padrón",
+    "destino": "170 e/ 5ta y 1era",
+    "descrip_destino": "Flores, Playa",
+    "type": "taxi"
+  },
+  {
+    "id": 21,
+    "ruta": "Ruta 21",
+    "origen": "Indep. y Almenares",
+    "descrip_origen": "Managua, Arroyo Naranjo",
+    "destino": "190 e/409 y 411",
+    "descrip_destino": "Parque Stgo. de las Vegas, Boyeros",
+    "type": "taxi"
+  },
+  {
+    "id": 22,
+    "ruta": "Ruta 22",
+    "origen": "Ave. 17 Ave. Casa Blanca y 78",
+    "descrip_origen": "Rpto. Bahía, Habana del Este",
+    "destino": "F y 27",
+    "descrip_destino": "Interior del Parqueo Estatal",
+    "type": "taxi"
+  },
+  {
+    "id": 23,
+    "ruta": "Ruta 23",
+    "origen": "243 y 198",
+    "descrip_origen": "Centro Comercial Fontanar, Boyeros",
+    "destino": "41B e/41 y 76",
+    "descrip_destino": "Hosp. Pando Ferrer, Liga Contra la Ceguera, Marianao",
+    "type": "taxi"
+  },
+  {
+    "id": 24,
+    "ruta": "Ruta 24",
+    "origen": "3era y C y 236",
+    "descrip_origen": "Jaimanita, Playa",
+    "destino": "O e/27 y 25",
+    "descrip_destino": "27 y O, Plaza",
+    "type": "taxi"
+  },
+  {
+    "id": 25,
+    "ruta": "Ruta 25",
+    "origen": "Terminal de Ómnibus",
+    "descrip_origen": "Ave. Indep. y 19 de Mayo",
+    "destino": "Terminal de FFCC",
+    "descrip_destino": "Zulueta y Arsenal",
+    "type": "taxi"
+  },
+  {
+    "id": 26,
+    "ruta": "Ruta 26",
+    "origen": "Terminal FFCC",
+    "descrip_origen": "Arsenal y Zulueta",
+    "destino": "H. Ameijeiras",
+    "descrip_destino": "Marina y San Lázaro",
+    "type": "taxi"
+  }
+]

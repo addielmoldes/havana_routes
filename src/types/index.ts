@@ -40,9 +40,19 @@ export interface Taxi {
     readonly combustible: number;
 }
 
+export enum BusType {
+    'main',
+    'supplier',
+    'secondary',
+}
+
 export interface VehicleRoute {
-    readonly code: string;
-    readonly route: string;
-    readonly type: 'bus' | 'taxi';
-    readonly busType?: 'main' | 'supplier' | 'secondary'
+    id: number;
+    ruta: string;
+    origen: string;
+    destino: string;
+    id_terminal?: number;
+    red?: BusType;
+    type: 'bus' | 'taxi' | string;
+    // id_prov: number;
 }

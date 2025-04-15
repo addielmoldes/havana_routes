@@ -1,0 +1,642 @@
+[
+  {
+    "id": 431,
+    "ruta": "A1",
+    "origen": "LA ROSITA",
+    "destino": "VIRGEN DEL CAMINO",
+    "id_terminal": 9,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 452,
+    "ruta": "A2",
+    "origen": "LA ROSITA",
+    "destino": "TNAL FFCC",
+    "id_terminal": 9,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 453,
+    "ruta": "A3",
+    "origen": "T.DIEZMERO",
+    "destino": "HOSP. MILITAR",
+    "id_terminal": 9,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 250,
+    "ruta": "A4",
+    "origen": "LAWTON",
+    "destino": "CALABAZAR",
+    "id_terminal": 11,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 364,
+    "ruta": "A5",
+    "origen": "COTORRO",
+    "destino": "P. FRATERNIDAD",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 365,
+    "ruta": "A6",
+    "origen": "COTORRO",
+    "destino": "NAZARENO",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 381,
+    "ruta": "A6L",
+    "origen": "COTORRO",
+    "destino": "EL ALECRIN",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 366,
+    "ruta": "A7",
+    "origen": "COTORRO",
+    "destino": "VILLA PANAMERICANA",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 368,
+    "ruta": "A9",
+    "origen": "COTORRO",
+    "destino": "STGO. VEGAS",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 369,
+    "ruta": "A10",
+    "origen": "COTORRO",
+    "destino": "LIGA CEGUERA",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 255,
+    "ruta": "A11",
+    "origen": "LAWTON",
+    "destino": "EL ROBLE",
+    "id_terminal": 11,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 249,
+    "ruta": "A12",
+    "origen": "LAWTON",
+    "destino": "FORTUNA",
+    "id_terminal": 11,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 463,
+    "ruta": "A13",
+    "origen": "FORTUNA",
+    "destino": "P.FRATERNIDAD",
+    "id_terminal": 13,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 325,
+    "ruta": "A14",
+    "origen": "PALATINO",
+    "destino": "FONTANAR",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 326,
+    "ruta": "A14CF",
+    "origen": "PALATINO",
+    "destino": "SANTA CECILIA",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 434,
+    "ruta": "A15",
+    "origen": "STGO. VEGAS",
+    "destino": "MURGAS",
+    "id_terminal": 3,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 331,
+    "ruta": "A16",
+    "origen": "PALATINO",
+    "destino": "TERMINAL HAYFONG",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 433,
+    "ruta": "A17",
+    "origen": "T.DIEZMERO",
+    "destino": "HOSP. NAVAL",
+    "id_terminal": 9,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 248,
+    "ruta": "A18",
+    "origen": "LAWTON",
+    "destino": "EL VOLCAN",
+    "id_terminal": 11,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 370,
+    "ruta": "A19",
+    "origen": "COTORRO",
+    "destino": "HOSP. JULIO TRIGO",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 320,
+    "ruta": "A20",
+    "origen": "PALATINO",
+    "destino": "MIRAMAR",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 372,
+    "ruta": "A21",
+    "origen": "COTORRO",
+    "destino": "TUNEL BAHIA",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 382,
+    "ruta": "A24",
+    "origen": "GUANABACOA",
+    "destino": "LA CABAÑA",
+    "id_terminal": 7,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 348,
+    "ruta": "A26",
+    "origen": "RPTO. GUITERAS",
+    "destino": "MICRO X",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 458,
+    "ruta": "A27",
+    "origen": "PALATINO",
+    "destino": "MUELLE LUZ",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 383,
+    "ruta": "A28",
+    "origen": "MICRO X",
+    "destino": "GUANABACOA",
+    "id_terminal": 7,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 384,
+    "ruta": "A29",
+    "origen": "GUANABACOA",
+    "destino": "EMBOQUE REGLA",
+    "id_terminal": 7,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 385,
+    "ruta": "A30",
+    "origen": "GUANABACOA",
+    "destino": "TNAL FFCC",
+    "id_terminal": 7,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 386,
+    "ruta": "A31",
+    "origen": "GUANABACOA",
+    "destino": "EL ALECRIN - DAP",
+    "id_terminal": 7,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 329,
+    "ruta": "A32",
+    "origen": "PALATINO",
+    "destino": "RPTO. CAMILO CIENFUEGOS",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 456,
+    "ruta": "A33",
+    "origen": "LISA",
+    "destino": "HOSP. JOAQUIN ALBARRAN",
+    "id_terminal": 5,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 451,
+    "ruta": "A35",
+    "origen": "T.DIEZMERO",
+    "destino": "CUJAE",
+    "id_terminal": 9,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 21,
+    "ruta": "A40",
+    "origen": "GUANABO",
+    "destino": "TERMINAL FFCC",
+    "id_terminal": 14,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 25,
+    "ruta": "A42",
+    "origen": "GUANABO",
+    "destino": "PEDRO PI - ALBERRO",
+    "id_terminal": 14,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 26,
+    "ruta": "A42L",
+    "origen": "GUANABO",
+    "destino": "BAJURAYABO",
+    "id_terminal": 14,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 410,
+    "ruta": "A44",
+    "origen": "LISA",
+    "destino": "G Y 25, VEDADO",
+    "id_terminal": 5,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 239,
+    "ruta": "A45",
+    "origen": "GUANABO",
+    "destino": "GUANABACOA",
+    "id_terminal": 14,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 380,
+    "ruta": "A47",
+    "origen": "COTORRO",
+    "destino": "HOSP. AMEIJEIRAS",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 353,
+    "ruta": "A48",
+    "origen": "RPTO. GUITERAS",
+    "destino": "PEÑALVER",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 390,
+    "ruta": "A49",
+    "origen": "RPTO. GUITERAS",
+    "destino": "TUNEL BAHIA",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 392,
+    "ruta": "A49CF",
+    "origen": "RPTO. GUITERAS",
+    "destino": "PARQUE FRATERNIDAD",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 393,
+    "ruta": "A49L",
+    "origen": "RPTO. GUITERAS",
+    "destino": "VIRGEN CAMINO",
+    "id_terminal": -1,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 387,
+    "ruta": "A50",
+    "origen": "GUANABACOA",
+    "destino": "TNAL OMNIBUS",
+    "id_terminal": 7,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 459,
+    "ruta": "A51",
+    "origen": "PALATINO",
+    "destino": "SANTA FE",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 371,
+    "ruta": "A52",
+    "origen": "COTORRO",
+    "destino": "LA PALMA",
+    "id_terminal": 4,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 490,
+    "ruta": "A56",
+    "origen": "RPTO. GUITERAS",
+    "destino": "CARCEL Y PEÑA POBRE",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 361,
+    "ruta": "A58",
+    "origen": "RPTO. GUITERAS",
+    "destino": "TERMINAL OMNIBUS",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 360,
+    "ruta": "A60",
+    "origen": "RPTO. GUITERAS",
+    "destino": "EMBOQUE REGLA",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 23,
+    "ruta": "A62",
+    "origen": "GUANABO",
+    "destino": "VIRGEN DEL CAMINO",
+    "id_terminal": 14,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 394,
+    "ruta": "A63",
+    "origen": "GUANABO",
+    "destino": "SANTA CRUZ DEL NORTE",
+    "id_terminal": 14,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 24,
+    "ruta": "A64",
+    "origen": "GUANABO",
+    "destino": "GUANABACOA",
+    "id_terminal": 14,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 362,
+    "ruta": "A65",
+    "origen": "RPTO. GUITERAS",
+    "destino": "PALATINO",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 358,
+    "ruta": "A66",
+    "origen": "RPTO. GUITERAS",
+    "destino": "EMBOQUE REGLA",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 465,
+    "ruta": "A67",
+    "origen": "RPTO. GUITERAS",
+    "destino": "PALATINO",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 462,
+    "ruta": "A68",
+    "origen": "RPTO. GUITERAS",
+    "destino": "PALATINO",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 418,
+    "ruta": "A70",
+    "origen": "LISA",
+    "destino": "VIRGEN CAMINO",
+    "id_terminal": 5,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 460,
+    "ruta": "A81",
+    "origen": "PALATINO",
+    "destino": "SANTA CECILIA",
+    "id_terminal": 15,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 488,
+    "ruta": "A71",
+    "origen": "RPTO. GUITERAS",
+    "destino": "12 Y 23 VEDADO",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 357,
+    "ruta": "A83",
+    "origen": "RPTO. GUITERAS",
+    "destino": "FORTUNA",
+    "id_terminal": -1,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 489,
+    "ruta": "A72",
+    "origen": "REGLA",
+    "destino": "RPTO. C. CIENFUEGOS",
+    "id_terminal": 12,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 464,
+    "ruta": "A87",
+    "origen": "FORTUNA",
+    "destino": "TNAL OMNIBUS",
+    "id_terminal": 13,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 467,
+    "ruta": "A91",
+    "origen": "PLAYA",
+    "destino": "SAN AGUSTIN",
+    "id_terminal": 16,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 388,
+    "ruta": "A95",
+    "origen": "GUANABACOA",
+    "destino": "VEDADO",
+    "id_terminal": 7,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  },
+  {
+    "id": 449,
+    "ruta": "A97",
+    "origen": "PLAYA",
+    "destino": "HUSILLO",
+    "id_terminal": 16,
+    "red": 1,
+    "type": "bus",
+    "id_prov": 1
+  }
+]
