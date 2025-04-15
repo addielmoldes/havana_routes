@@ -1,6 +1,7 @@
 import {AuthContext} from "@/shared/contexts.ts";
 import {ReactNode, useEffect, useRef, useState} from "react";
 import useSection from "@/hooks/useSection.ts";
+import {toast} from "sonner";
 
 export default function TokenProvider({children}: { children: ReactNode }) {
     const taxiToken = useRef(localStorage.getItem('access_token'));
@@ -16,7 +17,7 @@ export default function TokenProvider({children}: { children: ReactNode }) {
                 const consumerKey = import.meta.env.VITE_CONSUMER_KEY;
                 const consumerSecret = import.meta.env.VITE_CONSUMER_SECRET;
 
-                fetch('/api/taxi/auth', {
+                fetch(import.meta.env.VITE_TAXI_AUTH_URL, {
                     method: 'POST',
                     signal: controller.signal,
                     headers: {
@@ -32,7 +33,15 @@ export default function TokenProvider({children}: { children: ReactNode }) {
                         localStorage.setItem('access_token', data.access_token);
                         setToken(data.access_token);
                     })
-                    .catch(error => console.error(error));
+                    .catch(error => {
+                        if (error.message.includes('NetworkError')) {
+                            toast.error('Error', {
+                                description: 'No se pudo establecer la conexión',
+                                position: 'top-right',
+                            });
+                        }
+                        console.error(error);
+                    });
             } else {
                 setToken(taxiToken.current);
             }

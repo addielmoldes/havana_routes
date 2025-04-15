@@ -1,6 +1,7 @@
 import useRoute from "@/hooks/useRoute.ts";
 import {useEffect, useState} from "react";
 import useToken from "@/hooks/useToken.ts";
+import {toast} from "sonner";
 
 export default function useFetch(resource: string) {
     const [data, setData] = useState();
@@ -17,17 +18,25 @@ export default function useFetch(resource: string) {
             })
                 .then(res => res.json())
                 .then(data => setData(data.lista))
-                .catch(err => console.log(err));
+                .catch(error => {
+                    if (error.message.includes('NetworkError')) {
+                        toast.error('Error', {
+                            description: 'No se pudo establecer la conexión',
+                            position: 'top-right',
+                        });
+                    }
+                    console.error(error);
+                });
         }
 
         switch (route.type) {
             case 'bus':
                 authToken = {apikey: token};
-                getData('/api/buses');
+                getData(import.meta.env.VITE_BUS_URL);
                 break;
             case 'taxi':
                 authToken = {Authorization: `Bearer ${token}`};
-                getData('/api/taxis');
+                getData(import.meta.env.VITE_TAXI_URL);
                 break;
         }
 
