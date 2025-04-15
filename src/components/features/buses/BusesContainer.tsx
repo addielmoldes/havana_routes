@@ -1,8 +1,8 @@
 import RouteList from '../RouteList.tsx'
 import {Tabs, TabsTrigger, TabsContent, TabsList} from "@/components/ui/tabs.tsx";
-import mainRoutes from "@/utils/main-routes.json";
-import supplierRoutes from "@/utils/supplier-routes.json";
-import secondaryRoutes from "@/utils/secondary-routes.json";
+import mainRoutes from "@/utils/routes/main-routes.json";
+import supplierRoutes from "@/utils/routes/supplier-routes.json";
+import secondaryRoutes from "@/utils/routes/secondary-routes.json";
 
 export default function BusesContainer() {
 

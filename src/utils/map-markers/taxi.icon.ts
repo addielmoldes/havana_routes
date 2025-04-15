@@ -1,5 +1,5 @@
 import {Icon} from 'leaflet'
-import taxiMarker from '../../assets/taxiMarker.png?url'
+import taxiMarker from '../../../assets/taxiMarker.png?url'
 
 export const taxiIcon = new Icon({
     iconUrl: taxiMarker,

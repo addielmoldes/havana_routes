@@ -1,5 +1,5 @@
 import RouteList from "@/components/features/RouteList.tsx";
-import taxiRoutes from "@/utils/taxi-routes.json";
+import taxiRoutes from "@/utils/routes/taxi-routes.json";
 
 export default function TaxisContainer() {
 
