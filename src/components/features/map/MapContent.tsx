@@ -8,8 +8,9 @@ import {mainBusIcon} from "@/utils/map-markers/main-bus.icon.ts";
 import {supplierBusIcon} from "@/utils/map-markers/supplier-bus.icon.ts";
 import {secondaryBusIcon} from "@/utils/map-markers/secondary-bus.icon.ts";
 import {taxiIcon} from "@/utils/map-markers/taxi.icon.ts";
-import {useEffect} from "react";
 import {userIcon} from "@/utils/map-markers/user.icon.ts";
+import {Button} from "@/components/ui/button.tsx";
+import {Locate} from "lucide-react";
 
 export default function MapContent() {
     const {route} = useRoute();
@@ -37,11 +38,11 @@ export default function MapContent() {
             break;
     }
 
-    useEffect(() => {
+    function updateMapCenter() {
         if (location) {
             map.flyTo(location);
         }
-    }, [location]);
+    }
 
     const buses = busData.filter((vehicle: Bus) => vehicle.id_ruta === route.id);
     const busMarkers = buses.map((vehicle: Bus) => (
@@ -66,6 +67,14 @@ export default function MapContent() {
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
             {location && <Marker position={location} icon={userIcon}/>}
             {busMarkers}
+            <Button
+                size="icon"
+                variant="outline"
+                className="absolute z-[999] bottom-1 right-1"
+                onClick={() => updateMapCenter()}
+            >
+                <Locate/>
+            </Button>
         </>
     )
 }
