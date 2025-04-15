@@ -24,7 +24,7 @@ export default function App() {
             <Toaster/>
 
             <Dialog defaultOpen={true}>
-                <DialogContent className="z-[999999999]">
+                <DialogContent className="z-[999999999]" onOpenAutoFocus={e => e.preventDefault()}>
                     <DialogHeader>
                         <DialogTitle>Atención</DialogTitle>
                     </DialogHeader>
@@ -44,7 +44,8 @@ export default function App() {
                         <p>
                             <strong>¿Qué hacer?</strong>
                             <br/>
-                            Si tu navegador lo permite, añade una excepción de seguridad al sitio:&nbsp;
+                            Si tu navegador lo permite, añade una excepción de seguridad al sitio:
+                            <br/>
                             <code>https://am.transnet.cu</code>
                         </p>
                     </div>
