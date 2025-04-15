@@ -77,7 +77,7 @@ export default function HeaderContainer({setSearch}: { setSearch: (search: strin
                     onKeyDown={handleKeyDown}/>
             )}
 
-            {!showSearch && search && (
+            {!showSearch && search && !['settings', 'map'].includes(section) && (
                 <div className="text-muted-foreground">
                     Búsqueda: <Badge variant="secondary">{search}</Badge>
                 </div>
