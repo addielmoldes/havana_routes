@@ -4,5 +4,6 @@ import secondaryBusMarker from '../../../assets/secondaryBusMarker.png?url'
 export const secondaryBusIcon = new Icon({
     iconUrl: secondaryBusMarker,
     iconSize: [64, 64],
-    iconAnchor: [32, 64]
+    iconAnchor: [32, 64],
+    popupAnchor: [0, -64]
 });

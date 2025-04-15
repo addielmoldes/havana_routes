@@ -5,4 +5,5 @@ export const mainBusIcon = new Icon({
     iconUrl: mainBusMarker,
     iconSize: [64, 64],
     iconAnchor: [32, 64],
+    popupAnchor: [0, -64]
 });
