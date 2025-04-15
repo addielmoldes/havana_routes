@@ -11,10 +11,14 @@ import {taxiIcon} from "@/utils/map-markers/taxi.icon.ts";
 import {userIcon} from "@/utils/map-markers/user.icon.ts";
 import {Button} from "@/components/ui/button.tsx";
 import {Locate} from "lucide-react";
+import {APIResources} from "@/utils/api-resources.enum.ts";
 
 export default function MapContent() {
     const {route} = useRoute();
-    const busData: Bus[] = useFetch('/busruta');
+    const data: Bus[] = useFetch(
+        route.type === 'bus' ? APIResources.activeBuses : APIResources.activeTaxis,
+        route.type === 'bus' ? {ruta: route.id} : {route: route.id}
+    );
     const location = useLocation();
     const map = useMap();
 
@@ -44,8 +48,7 @@ export default function MapContent() {
         }
     }
 
-    const buses = busData.filter((vehicle: Bus) => vehicle.id_ruta === route.id);
-    const busMarkers = buses.map((vehicle: Bus) => (
+    const vehicleMarkers = data.map((vehicle: Bus) => (
         <Marker key={vehicle.numero} position={[vehicle.lat, vehicle.lon]} icon={icon}>
             <Popup>
                 <h1 className="font-bold text-base">Ruta {route.ruta}</h1>
@@ -66,7 +69,7 @@ export default function MapContent() {
         <>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
             {location && <Marker position={location} icon={userIcon}/>}
-            {busMarkers}
+            {vehicleMarkers}
             <Button
                 size="icon"
                 variant="outline"
