@@ -1,4 +1,6 @@
 import 'leaflet/dist/leaflet.css';
+import icon from "leaflet/dist/images/marker-icon.png";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import {Icon, LatLngExpression} from "leaflet";
 import {Bus, BusType} from "@/types";
@@ -8,6 +10,15 @@ import {mainBusIcon} from "@/utils/main-bus.icon.ts";
 import {taxiIcon} from "@/utils/taxi.icon.ts";
 import {supplierBusIcon} from "@/utils/supplier-bus.icon.ts";
 import {secondaryBusIcon} from "@/utils/secondary-bus.icon.ts";
+
+const defaultIcon = new Icon({
+    iconUrl: icon,
+    shadowUrl: iconShadow,
+    iconSize: [25, 41],
+    shadowSize: [30, 65],
+    iconAnchor: [12, 41],
+    shadowAnchor: [7, 65]
+});
 
 export default function MapSection() {
     const busData: Bus[] = useFetch('/busruta');
@@ -62,7 +73,7 @@ export default function MapSection() {
                 attributionControl={false}
             >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                <Marker position={userLocation}/>
+                <Marker position={userLocation} icon={defaultIcon}/>
                 {busMarkers}
             </MapContainer>
         </div>
