@@ -1,7 +1,7 @@
 import {AuthContext} from "@/shared/contexts.ts";
 import {ReactNode, useEffect, useRef, useState} from "react";
 import useSection from "@/hooks/useSection.ts";
-import {toast} from "sonner";
+import {errorToast} from "@/shared/toasts.ts";
 
 export default function TokenProvider({children}: { children: ReactNode }) {
     const taxiToken = useRef(localStorage.getItem('access_token'));
@@ -35,12 +35,8 @@ export default function TokenProvider({children}: { children: ReactNode }) {
                     })
                     .catch(error => {
                         if (error.message.includes('NetworkError')) {
-                            toast.error('Error', {
-                                description: 'No se pudo establecer la conexión',
-                                position: 'top-right',
-                            });
+                            errorToast('No se pudo establecer la conexión');
                         }
-                        console.error(error);
                     });
             } else {
                 setToken(taxiToken.current);

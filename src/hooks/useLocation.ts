@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import {toast} from "sonner";
 import {LatLngExpression} from "leaflet";
+import {errorToast} from "@/shared/toasts.ts";
 
 export default function useLocation() {
     const [location, setLocation] = useState<number[] | null>(null);
@@ -24,10 +24,7 @@ export default function useLocation() {
                             message = 'No se pudo obtener la ubicación';
                             navigator.geolocation.clearWatch(locationID);
                     }
-                    toast.error('Error', {
-                        description: message,
-                        position: 'top-right',
-                    });
+                    errorToast(message);
                 },
 
                 // Options
