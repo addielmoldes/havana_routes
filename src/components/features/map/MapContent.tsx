@@ -70,10 +70,10 @@ export default function MapContent() {
             <Button
                 size="icon"
                 variant="outline"
-                className="absolute z-[999] bottom-1 right-1"
+                className="absolute z-[999] bottom-1 right-1 w-[3rem] h-[3rem]"
                 onClick={() => updateMapCenter()}
             >
-                <Locate/>
+                <Locate className="text-xl"/>
             </Button>
         </>
     )

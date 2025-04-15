@@ -8,7 +8,7 @@ export default function InformativeDialog() {
                     <DialogTitle>Atención</DialogTitle>
                 </DialogHeader>
                 <div>
-                    <div className="mb-2 text-center font-bold">ESTA APP SE ENCUENTRA EN DESARROLLO</div>
+                    <div className="mb-2 font-bold">ESTA APP SE ENCUENTRA EN DESARROLLO</div>
                     <p>
                         <strong>Por cuestiones ajenas al desarrollador</strong>, es posible que la información de
                         las rutas en tiempo real no esté disponible.
