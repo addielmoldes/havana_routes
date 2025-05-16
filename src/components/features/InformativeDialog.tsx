@@ -19,14 +19,6 @@ export default function InformativeDialog() {
                         certificado inválido, por lo tanto el navegador bloqueará (por defecto) las solicitudes a
                         dicho sitio.
                     </p>
-                    <br/>
-                    <p>
-                        <strong>¿Qué hacer?</strong>
-                        <br/>
-                        Si tu navegador lo permite, añade una excepción de seguridad al sitio:
-                        <br/>
-                        <code>https://am.transnet.cu</code>
-                    </p>
                 </div>
                 <DialogFooter>
                     <DialogClose>Entiendo</DialogClose>
