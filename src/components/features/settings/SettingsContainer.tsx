@@ -17,10 +17,6 @@ export default function SettingsContainer() {
             </div>
 
             <div className="flex justify-between items-center mb-3">
-                <a href="../../../../assets/transnet.crt" className="text-base grow">Descargar certificado</a>
-            </div>
-
-            <div className="flex justify-between items-center mb-3">
                 <span className="text-base">Sobre Rutas Habana</span>
                 <Button variant="ghost">
                     <ChevronRight/>
